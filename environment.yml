@@ -1,0 +1,11 @@
+name: pyprecis-environment
+channels:
+     - conda-forge
+     - defaults
+ dependencies:
+     - python=3.6.6
+     - numpy
+     - matplotlib
+     - cartopy=0.16.0
+     - dask=0.19.4
+     - iris=2.2.0
