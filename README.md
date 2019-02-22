@@ -1,24 +1,56 @@
 # PyPRECIS
-`PyPRECIS` is the python based training tool for PRECIS training courses.
 
-## Signposting
-* **Issues** are tracked and discussed under the Issues tab.  Please use issues to disucss proposed changes or capture improvements needed to work towards the next milestone.  Issues or improvements that fall contribute to the next milestone to be captured in thr Wiki tab.
-* **Pull requests** shows branches that are currently under review.  New branches are created in reponse to fixes identified and recorded in the Issues tab.
-* **Wiki** is used for summarising updates completed in each milestone and to record improvements that cannot be action in the current milestone.
+<h4 align="center">
+PyPRECIS is the python based training environment for Met Office PRECIS training courses.
+</h4>
 
-## Contributing to this repositry
-You'd like to help? Great!  
+<p align="center">
+<!-- https://shields.io/ is a good source of these -->
+<a href="https://github.com/MetOffice/PyPRECIS/releases">
+    <img src="https://img.shields.io/github/tag/MetOffice/PyPRECIS.svg"
+        alt="Latest version" /></a>
+<img src="https://img.shields.io/github/release-date/MetOffice/PyPRECIS.svg"
+    alt="Release date" /></a>
+<a href="https://github.com/MetOffice/PyPRECIS/commits/master">
+     <img src="https://img.shields.io/github/commits-since/MetOffice/PyPRECIS/latest.svg"
+          alt="Commits since last release" /></a>
+<img src="https://img.shields.io/github/repo-size/MetOffice/PyPRECIS.svg"
+    alt="Repo size" /></a>
+    </p>
+<br>
 
-To clone your own local copy of this repositry run the following in your terminal:
+## Overview
+PyPRECIS forms part of the Met Office PRECIS regional climate modelling system.  It is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment.
 
-```
-git clone git@github.com:MetOffice/PyPRECIS.git
-```
+PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
 
-Make sure you read the CONTRIBUTING.md file before you start. Then read through the current issues to see what you can help with.  If you have your own ideas for improvements, please start anew issues so we can track and discuss your improvement. You must create a new branch for any changes you make - now go and read the CONTRIBUTING.md again!
+Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/research/applied/international-development/precis).
 
-**NOTE: PUSHING CHANGES TO THE MASTER BRANCH CAN ONLY BE DONE BY SAEED OR HAMISH**
+## Contents
+The teaching elements of PyPRECIS are contained in the `notebooks` directory. The primary worksheets are:
 
-## Contact
-Please contact Saeed Sadri (saeed.sadri@metoffice.gov.uk) or Hamish Steptoe (hamish.steptoe@metoffice.gov.uk) if you
-have questions about this repository.
+Worksheet | Aims
+:----: | -----------
+[1](notebooks/worksheet1.ipynb) | <li>Identify and list the names of PRECIS output data in PP format using standard Linux commands</li><li>Use basic Iris commands to load data files, and view Iris cubes</li><li>Use Iris commands to remove the model rim, select data variables and save the output as NetCDF files</li>
+[2](notebooks/worksheet2.ipynb) | <li>Apply basic statistical operations to Iris cubes</li><li>Plot information from Iris cubes</li>
+[3](notebooks/worksheet1.ipynb) | <li>Extract specific regions of interested from large datasets</li><li>Apply more advanced statistical operations to multi-annual data</li><li>Produce your own data processing workflow</li>  
+[4](notebooks/worksheet1.ipynb) | <li>Calculate difference and percentage differences across cubes</li><li>Plot cubes using different plotting methods and with an appropriate colour scale</li><li>Create time series anomalies of precipitation and tempeature</li>  
+[5](notebooks/worksheet1.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
+[6](notebooks/worksheet1.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
+
+Three additional worksheets are available for use by workshop instructors:
+
+* `makedata.ipynb`: Provides scripts for preparing raw model output for use in notebook exercises.
+* `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
+* `worksheet6example.ipynb`: Example code for Worksheet 6.
+
+## Contributing
+Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md)
+
+## Licence
+PyPRECIS is licenced under the terms of [tbc]. PRECIS has it's own user licence and does
+
+<h5 align="center">
+<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" style="max-width: 40%;" alt="Met Office"> <br>
+&copy; British Crown Copyright 2018 - 2019, Met Office
+</h5>
