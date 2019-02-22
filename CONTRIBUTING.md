@@ -59,7 +59,7 @@ Other more general points to note:
 * **Do not use bare numbers.** Do not use use bare numbers (or hex numbers) as part of your branch naming scheme.
 
 **If in doubt, please contact the PRECIS team (precis@metoffice.gov.uk) if you
-have questions**
+have questions.**
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
