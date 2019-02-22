@@ -62,6 +62,6 @@ Other more general points to note:
 have questions**
 
 <h5 align="center">
-<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" style="max-width: 40%;" alt="Met Office"> <br>
+<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
 &copy; British Crown Copyright 2018 - 2019, Met Office
 </h5>
