@@ -5,8 +5,9 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 </h4>
 
 <p align="center">
+<!-- Github Sheilds - comment out until repo is public -->
 <!-- https://shields.io/ is a good source of these -->
-<a href="https://github.com/MetOffice/PyPRECIS/releases">
+<!-- <a href="https://github.com/MetOffice/PyPRECIS/releases">
     <img src="https://img.shields.io/github/tag/MetOffice/PyPRECIS.svg"
         alt="Latest version" /></a>
 <img src="https://img.shields.io/github/release-date/MetOffice/PyPRECIS.svg"
@@ -17,7 +18,7 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 <img src="https://img.shields.io/github/repo-size/MetOffice/PyPRECIS.svg"
     alt="Repo size" /></a>
     </p>
-<br>
+<br> -->
 
 ## Overview
 PyPRECIS forms part of the Met Office PRECIS regional climate modelling system.  It is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment.
@@ -48,9 +49,9 @@ Three additional worksheets are available for use by workshop instructors:
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md)
 
 ## Licence
-PyPRECIS is licenced under the terms of [tbc]. PRECIS has it's own user licence and does
+PyPRECIS is licenced under the terms of [tbc].
 
 <h5 align="center">
-<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" style="max-width: 40%;" alt="Met Office"> <br>
+<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
 &copy; British Crown Copyright 2018 - 2019, Met Office
 </h5>
