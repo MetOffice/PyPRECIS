@@ -2,15 +2,29 @@
 
 You'd like to help? Great!  :tada:
 
-To clone your own local copy of this repositry run the following in your terminal:
+[Clone your own local copy](https://help.github.com/en/articles/cloning-a-repository) of this repositry run the following in your terminal:
 
-```
+```shell
 git clone git@github.com:MetOffice/PyPRECIS.git
 ```
 
+Consider [creating a conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) from the PyPRECIS dependencies specified in the `environment.yml` file:
+```shell
+conda env create -f environment.yml
+```
+Remember to activate your new environment:
+```shell
+conda activate pyprecis-environment
+```
+
+:exclamation: *Note: As of v1.0 we are unable to provison the model data necessary for reproducing the full PyPRECIS learning environment via github due to it's substanation size.  Contact the PRECIS team for more information.*
+
+## Before you start...
+Read through the current issues to see what you can help with.  If you have your own ideas for improvements, please start a new issues so we can track and discuss your improvement. You must create a new branch for any changes you make.
+
 **Please take note of the following guidelines when contributing to the PyPRECIS repository.**
 
-* Please do **not** make changes to the `master` branch.  The `master` branch is reserved for files and code that has been fully tested and reviewed.  If you think something is ready to be pushed to the `master` branch please check with Saeed or Hamish first.
+* Please do **not** make changes to the `master` branch.  The `master` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can/should push to the `master` branch.
 
 * The `develop` branch contains the latest holistic version of the `PyPRECIS` repository.  Please branch off `develop` to fix a particular issue or add a new feature.
 * Please use the following tokens at the start of a new branch name to help sign-post and group branches:
@@ -30,6 +44,7 @@ junk | Throwaway branch created to experiment
 new/Wks10
 fix/Wks2_units
 ```
+* When you think your branch is ready to be merged into `develop`, open a new pull request.
 
 ## Signposting
 * **Issues** are tracked and discussed under the Issues tab.  Please use issues to disucss proposed changes or capture improvements needed to work towards the next milestone.  Issues or improvements that contribute to the next milestone to be captured in thr Wiki tab.
