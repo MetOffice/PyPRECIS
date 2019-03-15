@@ -46,10 +46,10 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6.
 
 ## Contributing
-Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md)
+Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
 
 ## Licence
-PyPRECIS is licenced under the terms of [tbc].
+PyPRECIS is **not** currently licenced for use outside of the Met Office.
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
