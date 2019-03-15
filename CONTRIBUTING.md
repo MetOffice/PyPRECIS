@@ -58,6 +58,9 @@ Other more general points to note:
 * **Avoid long descriptive names.**  Long branch names can be very helpful when you are looking at a list of branches but it can get in the way when looking at decorated one-line logs as the branch names can eat up most of the single line and abbreviate the visible part of the log.
 * **Do not use bare numbers.** Do not use use bare numbers (or hex numbers) as part of your branch naming scheme.
 
+## CONTRIBUTING.ipynb
+The `CONTRIBUTING.ipyn` file contains the worksheet style guide.  Please consult this for information on formatting the new and ammended worksheets in a consistent style.
+
 **If in doubt, please contact the PRECIS team (precis@metoffice.gov.uk) if you
 have questions.**
 
