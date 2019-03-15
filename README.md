@@ -45,6 +45,9 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
 * `worksheet6example.ipynb`: Example code for Worksheet 6.
 
+## Data
+The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details. 
+
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
 Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
