@@ -34,10 +34,10 @@ Worksheet | Aims
 :----: | -----------
 [1](notebooks/worksheet1.ipynb) | <li>Identify and list the names of PRECIS output data in PP format using standard Linux commands</li><li>Use basic Iris commands to load data files, and view Iris cubes</li><li>Use Iris commands to remove the model rim, select data variables and save the output as NetCDF files</li>
 [2](notebooks/worksheet2.ipynb) | <li>Apply basic statistical operations to Iris cubes</li><li>Plot information from Iris cubes</li>
-[3](notebooks/worksheet1.ipynb) | <li>Extract specific regions of interested from large datasets</li><li>Apply more advanced statistical operations to multi-annual data</li><li>Produce your own data processing workflow</li>  
-[4](notebooks/worksheet1.ipynb) | <li>Calculate difference and percentage differences across cubes</li><li>Plot cubes using different plotting methods and with an appropriate colour scale</li><li>Create time series anomalies of precipitation and tempeature</li>  
-[5](notebooks/worksheet1.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
-[6](notebooks/worksheet1.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
+[3](notebooks/worksheet3.ipynb) | <li>Extract specific regions of interested from large datasets</li><li>Apply more advanced statistical operations to multi-annual data</li><li>Produce your own data processing workflow</li>  
+[4](notebooks/worksheet4.ipynb) | <li>Calculate difference and percentage differences across cubes</li><li>Plot cubes using different plotting methods and with an appropriate colour scale</li><li>Create time series anomalies of precipitation and tempeature</li>  
+[5](notebooks/worksheet5.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
+[6](notebooks/worksheet6.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
 
 Three additional worksheets are available for use by workshop instructors:
 
