@@ -25,7 +25,7 @@ PyPRECIS forms part of the Met Office PRECIS regional climate modelling system. 
 
 PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
 
-Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/research/applied/international-development/precis).
+Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/precis).
 
 ## Contents
 The teaching elements of PyPRECIS are contained in the `notebooks` directory. The primary worksheets are:
