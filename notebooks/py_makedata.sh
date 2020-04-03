@@ -4,4 +4,4 @@
 #SBATCH --ntasks=8
 #SBATCH --time=00-06:00:00
 module load scitools
-python3 -u /project/precis/worksheets/data/pp/wks5dataprep.py
+python3 -u /project/ciid/projects/PRECIS/worksheets/data/pp/wks5dataprep.py
