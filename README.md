@@ -53,7 +53,7 @@ Information on how to contribute can be found in the [Contributing guide](CONTRI
 Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
 
 ## Licence
-PyPRECIS is under BSD 3-clause licence for use outside of the Met Office.
+PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Office.
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
