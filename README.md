@@ -57,5 +57,5 @@ PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Offic
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2019, Met Office
+&copy; British Crown Copyright 2018 - 2020, Met Office
 </h5>
