@@ -46,14 +46,14 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6.
 
 ## Data
-The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details. 
+The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details.
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
 Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
 
 ## Licence
-PyPRECIS is **not** currently licenced for use outside of the Met Office.
+PyPRECIS is under BSD 3-clause licence for use outside of the Met Office.
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
