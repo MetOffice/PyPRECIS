@@ -39,11 +39,20 @@ Worksheet | Aims
 [5](notebooks/worksheet1.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
 [6](notebooks/worksheet1.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
 
+Additional tutorials specific to the CSSP 20th Century reanalysis datasets:
+
+Worksheet | Aims
+:----: | -----------
+[CSSP 1](notebooks/CSSP_20CRDS_Tutorials/Introduction.ipynb) | <li>How to use a cloud based platform to analyse the 20CR-DS dataset</li><li>Settig up a python environment</li>
+[CSSP 2](notebooks/CSSP_20CRDS_Tutorials/tutorial_1_data_access.ipynb) | <li>How to load data into Xarrays format</li><li>How to convert the data xarrays into iris cube format</li><li>How to perform basic cube operations</li>
+[CSSP 3](notebooks/CSSP_20CRDS_Tutorials/tutorial_3_basic_analysis.ipynb) | <li>Calculate and visualise annual and monthly means</li><li>Calculate and visualise seasonal means</li><li>Calculate mean differences (anomalies)</li>
+[CSSP 4](notebooks/CSSP_20CRDS_Tutorials/tutorial_4_advance_analysis.ipynb) | <li>Calculate frequency of wet days</li><li>Calculate percentiles</li><li>Calculate some useful climate extremes statistics</li>
+
 Three additional worksheets are available for use by workshop instructors:
 
 * `makedata.ipynb`: Provides scripts for preparing raw model output for use in notebook exercises.
 * `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
-* `worksheet6example.ipynb`: Example code for Worksheet 6.
+* `worksheet6example.ipynb`: Example code for Worksheet 6. 
 
 ## Data
 The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details.
