@@ -39,23 +39,32 @@ Worksheet | Aims
 [5](notebooks/worksheet5.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
 [6](notebooks/worksheet6.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
 
+Additional tutorials specific to the CSSP 20th Century reanalysis datasets:
+
+Worksheet | Aims
+:----: | -----------
+[CSSP 1](notebooks/CSSP_20CRDS_Tutorials/Introduction.ipynb) | <li>How to use a cloud based platform to analyse the 20CR-DS dataset</li><li>Settig up a python environment</li>
+[CSSP 2](notebooks/CSSP_20CRDS_Tutorials/tutorial_1_data_access.ipynb) | <li>How to load data into Xarrays format</li><li>How to convert the data xarrays into iris cube format</li><li>How to perform basic cube operations</li>
+[CSSP 3](notebooks/CSSP_20CRDS_Tutorials/tutorial_3_basic_analysis.ipynb) | <li>Calculate and visualise annual and monthly means</li><li>Calculate and visualise seasonal means</li><li>Calculate mean differences (anomalies)</li>
+[CSSP 4](notebooks/CSSP_20CRDS_Tutorials/tutorial_4_advance_analysis.ipynb) | <li>Calculate frequency of wet days</li><li>Calculate percentiles</li><li>Calculate some useful climate extremes statistics</li>
+
 Three additional worksheets are available for use by workshop instructors:
 
 * `makedata.ipynb`: Provides scripts for preparing raw model output for use in notebook exercises.
 * `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
-* `worksheet6example.ipynb`: Example code for Worksheet 6.
+* `worksheet6example.ipynb`: Example code for Worksheet 6. 
 
 ## Data
-The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details. 
+The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details.
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
 Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
 
 ## Licence
-PyPRECIS is **not** currently licenced for use outside of the Met Office.
+PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Office.
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2019, Met Office
+&copy; British Crown Copyright 2018 - 2020, Met Office
 </h5>
