@@ -45,6 +45,8 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
 * `worksheet6example.ipynb`: Example code for Worksheet 6.
 
+Notebooks also contains the tutorials for CSSP 20th Century reanalysis datasets. 
+
 ## Data
 The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details.
 
