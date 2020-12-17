@@ -7,18 +7,21 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 <p align="center">
 <!-- Github Sheilds - comment out until repo is public -->
 <!-- https://shields.io/ is a good source of these -->
-<!-- <a href="https://github.com/MetOffice/PyPRECIS/releases">
+<a href="https://github.com/MetOffice/PyPRECIS/releases">
     <img src="https://img.shields.io/github/tag/MetOffice/PyPRECIS.svg"
         alt="Latest version" /></a>
-<img src="https://img.shields.io/github/release-date/MetOffice/PyPRECIS.svg"
-    alt="Release date" /></a>
 <a href="https://github.com/MetOffice/PyPRECIS/commits/master">
      <img src="https://img.shields.io/github/commits-since/MetOffice/PyPRECIS/latest.svg"
           alt="Commits since last release" /></a>
+<img src="https://img.shields.io/github/release-date/MetOffice/PyPRECIS.svg"
+    alt="Release date" /></a>
 <img src="https://img.shields.io/github/repo-size/MetOffice/PyPRECIS.svg"
     alt="Repo size" /></a>
+<img alt="GitHub" src="https://img.shields.io/github/license/metoffice/PyPRECIS?style=flat">
     </p>
-<br> -->
+<br>
+
+
 
 ## Overview
 PyPRECIS forms part of the Met Office PRECIS regional climate modelling system.  It is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment.
