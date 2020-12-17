@@ -17,7 +17,7 @@ Remember to activate your new environment:
 conda activate pyprecis-environment
 ```
 
-:exclamation: *Note: As of v1.0 we are unable to provison the model data necessary for reproducing the full PyPRECIS learning environment via github due to it's substanation size.  Contact the PRECIS team for more information.*
+:exclamation: *Note: As of v1.0 we are unable to provison the model data necessary for reproducing the full PyPRECIS learning environment via github due to it's large file size.  Contact the PRECIS team for more information.*
 
 ## Before you start...
 Read through the current issues to see what you can help with.  If you have your own ideas for improvements, please start a new issues so we can track and discuss your improvement. You must create a new branch for any changes you make.
