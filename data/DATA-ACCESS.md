@@ -1,4 +1,4 @@
-# DATA ACCESS
+# Data Access
 
 Data relating to the PyPRECIS project is currently stored at /project/ciid/projects/PRECIS/worksheets/data
 
