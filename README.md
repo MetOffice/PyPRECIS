@@ -7,25 +7,28 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 <p align="center">
 <!-- Github Sheilds - comment out until repo is public -->
 <!-- https://shields.io/ is a good source of these -->
-<!-- <a href="https://github.com/MetOffice/PyPRECIS/releases">
+<a href="https://github.com/MetOffice/PyPRECIS/releases">
     <img src="https://img.shields.io/github/tag/MetOffice/PyPRECIS.svg"
         alt="Latest version" /></a>
-<img src="https://img.shields.io/github/release-date/MetOffice/PyPRECIS.svg"
-    alt="Release date" /></a>
 <a href="https://github.com/MetOffice/PyPRECIS/commits/master">
      <img src="https://img.shields.io/github/commits-since/MetOffice/PyPRECIS/latest.svg"
           alt="Commits since last release" /></a>
+<img src="https://img.shields.io/github/release-date/MetOffice/PyPRECIS.svg"
+    alt="Release date" /></a>
 <img src="https://img.shields.io/github/repo-size/MetOffice/PyPRECIS.svg"
     alt="Repo size" /></a>
+<img alt="GitHub" src="https://img.shields.io/github/license/metoffice/PyPRECIS?style=flat">
     </p>
-<br> -->
+<br>
+
+
 
 ## Overview
 PyPRECIS forms part of the Met Office PRECIS regional climate modelling system.  It is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment.
 
 PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
 
-Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/research/applied/international-development/precis).
+Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/precis).
 
 ## Contents
 The teaching elements of PyPRECIS are contained in the `notebooks` directory. The primary worksheets are:
@@ -34,10 +37,10 @@ Worksheet | Aims
 :----: | -----------
 [1](notebooks/worksheet1.ipynb) | <li>Identify and list the names of PRECIS output data in PP format using standard Linux commands</li><li>Use basic Iris commands to load data files, and view Iris cubes</li><li>Use Iris commands to remove the model rim, select data variables and save the output as NetCDF files</li>
 [2](notebooks/worksheet2.ipynb) | <li>Apply basic statistical operations to Iris cubes</li><li>Plot information from Iris cubes</li>
-[3](notebooks/worksheet1.ipynb) | <li>Extract specific regions of interested from large datasets</li><li>Apply more advanced statistical operations to multi-annual data</li><li>Produce your own data processing workflow</li>  
-[4](notebooks/worksheet1.ipynb) | <li>Calculate difference and percentage differences across cubes</li><li>Plot cubes using different plotting methods and with an appropriate colour scale</li><li>Create time series anomalies of precipitation and tempeature</li>  
-[5](notebooks/worksheet1.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
-[6](notebooks/worksheet1.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
+[3](notebooks/worksheet3.ipynb) | <li>Extract specific regions of interested from large datasets</li><li>Apply more advanced statistical operations to multi-annual data</li><li>Produce your own data processing workflow</li>  
+[4](notebooks/worksheet4.ipynb) | <li>Calculate difference and percentage differences across cubes</li><li>Plot cubes using different plotting methods and with an appropriate colour scale</li><li>Create time series anomalies of precipitation and tempeature</li>  
+[5](notebooks/worksheet5.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
+[6](notebooks/worksheet6.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
 
 Additional tutorials specific to the CSSP 20th Century reanalysis datasets:
 
@@ -55,7 +58,7 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6. 
 
 ## Data
-The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details.
+The data used in the worksheets is currently only available within the Met Office. Data relating to the CSSP_20CRDS_Tutorials is also available in Zarr format in an Azure Blob Storage Service. See the `data/DATA-ACESS.md` for further details.
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
