@@ -58,7 +58,7 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6. 
 
 ## Data
-The data used in the worksheets is currently only available within the Met Office.  See the `data/README` for further details.
+The data used in the worksheets is currently only available within the Met Office. Data relating to the CSSP_20CRDS_Tutorials is also available in Zarr format in an Azure Blob Storage Service. See the `data/DATA-ACESS.md` for further details.
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
