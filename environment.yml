@@ -1,11 +1,9 @@
 name: pyprecis-environment
 channels:
      - conda-forge
-     - defaults
- dependencies:
-     - python=3.6.6
-     - numpy
-     - matplotlib
-     - cartopy=0.16.0
-     - dask=0.19.4
-     - iris=2.2.0
+dependencies:
+     - jupyterlab
+     - iris=2.4.0
+     - cf-units=3.0.0
+     - mo_pack=0.2.0
+     - dask=2021.12.0
