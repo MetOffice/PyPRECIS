@@ -6,4 +6,5 @@ dependencies:
      - iris=2.4.0
      - cf-units=3.0.0
      - mo_pack=0.2.0
+     - nc-time-axis=1.2.0
      - dask=2021.12.0
