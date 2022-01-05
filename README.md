@@ -42,7 +42,7 @@ Worksheet | Aims
 [5](notebooks/worksheet5.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
 [6](notebooks/worksheet6.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
 
-Additional tutorials specific to the CSSP 20th Century reanalysis datasets:
+Additional tutorials specific to the CSSP 20th Century reanalysis dataset:
 
 Worksheet | Aims
 :----: | -----------
@@ -58,7 +58,8 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6. 
 
 ## Data
-The data used in the worksheets is currently only available within the Met Office. Data relating to the CSSP_20CRDS_Tutorials is also available in Zarr format in an Azure Blob Storage Service. See the `data/DATA-ACESS.md` for further details.
+The data used in the worksheets is currently only available within the Met Office. Data relating to the CSSP_20CRDS_Tutorials is also available in Zarr format in an Azure Blob Storage Service. See [Data Access](DATA-ACESS.md) for further details.
+
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
@@ -69,5 +70,5 @@ PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Offic
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2020, Met Office
+&copy; British Crown Copyright 2018 - 2022, Met Office
 </h5>
