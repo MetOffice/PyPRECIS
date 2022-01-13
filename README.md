@@ -65,18 +65,6 @@ As of v2.0, the storage solution for making this data available alongside the no
 
 Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob Storage Service. To access this data user will need a valid shared access signature (SAS) token.  The data is in [Zarr](https://zarr.readthedocs.io/en/stable/) format and the total volume is ~2TB. The data is in hourly, 3 hourly, 6 hourly, daily and monthly frequencies stored seperatrely under the `metoffice-20cr-ds` container on MS-Azure. Monthly data only is also via [Zenodo](https://zenodo.org/record/2558135).
 
-## Contributing
-Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
-Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
-
-## Licence
-PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Office.
-
-<h5 align="center">
-<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2022, Met Office
-</h5>
-
 
 ## AWS 
 
@@ -115,6 +103,22 @@ Host ec2-*.eu-west-2.compute.amazonaws.com
 * Find the public IPv4 DNS and ssh in using it ssh ec2-<ip address>.eu-west-2.compute.amazonaws.com, public IPv4 DNS can be found in instance detail on AWS. Click on your instance and it will open the details. 
 
 * Remember to shutdown the instance when not using it. It will save the cost. 
+
+
+
+
+
+## Contributing
+Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
+Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
+
+## Licence
+PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Office.
+
+<h5 align="center">
+<img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
+&copy; British Crown Copyright 2018 - 2022, Met Office
+</h5>
 
 
 
