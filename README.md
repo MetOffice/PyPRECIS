@@ -76,3 +76,52 @@ PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Offic
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
 &copy; British Crown Copyright 2018 - 2022, Met Office
 </h5>
+
+
+## AWS 
+
+# Create an EC2 instance
+
+* Click on Launch instance
+* Choose Amazon Linux 2 AMI (HVM) 64-bit machine, click select
+* Choose t2.2xlarge and click next: configure instance details
+* Choose subnet default eu-west-2c
+* In IAM role choose existing trainings-ec2-dev role and click next: storage
+* 8 gb is fine, click next: add tags
+* Add following tags
+  * Name: Instance name
+  * Tenable: FA
+  * ServiceOwner: [firstname.lastname]
+  * ServiceCode: PABCLT
+* add securitygroup, select an existing security group: IAStrainings-ec2-mo
+* Review and Launch and then select launch
+* It will prompt to set a key pair (to allow ssh). create a new key and download it. 
+
+It will create the instance. To see the running instance goto instances and instacne state will be "Running"
+
+# SSH instance on VDI
+
+
+* Save the key (.pem)  to .ssh and set the permission: chmod 0400 ~/.ssh/your_key.pem
+* Open ~/.ssh/config and add following:
+
+```
+Host ec2-*.eu-west-2.compute.amazonaws.com
+    IdentityFile ~/.ssh/your_key.pem
+    User ec2-user
+
+```
+
+* Find the public IPv4 DNS and ssh in using it ssh ec2-<ip address>.eu-west-2.compute.amazonaws.com, public IPv4 DNS can be found in instance detail on AWS. Click on your instance and it will open the details. 
+
+* Remember to shutdown the instance when not using it. It will save the cost. 
+
+
+
+
+
+
+
+
+
+
