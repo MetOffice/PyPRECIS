@@ -1,8 +1,9 @@
 # this script load data on aws s3 bucket
+import botocore
 import boto3
+import logging
 import os
 import glob
-
 
 
 def upload_file(file_name, bucket, object_name=None):
@@ -21,25 +22,21 @@ def upload_file(file_name, bucket, object_name=None):
     # Upload the file
     s3_client = boto3.client('s3')
     try:
-        response = s3_client.upload_file(file_name, bucket, object_name)
-    except ClientError as e:
+        s3_client.upload_file(file_name, bucket, object_name)
+    except botocore.exceptions.ClientError as e:
         logging.error(e)
         return False
     return True
-
-
-
-
 
 
 def main():
     bucket = "ias-pyprecis"
 
     file_path = "*.txt"
-    files = glob.glob(file_path)   
-    
+    files = glob.glob(file_path)
+
     for file in files:
-        upload_file(file, bucket, object_name=None)    
+        upload_file(file, bucket, object_name=None)
 
 
 if __name__ == "__main__":
