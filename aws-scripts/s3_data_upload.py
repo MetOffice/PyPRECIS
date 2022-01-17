@@ -1,6 +1,7 @@
 # this script load data on aws s3 bucket
 import boto3
 import os
+import glob
 
 
 
@@ -34,12 +35,11 @@ def upload_file(file_name, bucket, object_name=None):
 def main():
     bucket = "ias-pyprecis"
 
-    # TODO: modify it to load multiple files 
-    file_name = "sample.txt"
-    object_name = "sample.txt"
-
-    upload_file(file_name, bucket, object_name=None)
+    file_path = "*.txt"
+    files = glob.glob(file_path)   
     
+    for file in files:
+        upload_file(file, bucket, object_name=None)    
 
 
 if __name__ == "__main__":
