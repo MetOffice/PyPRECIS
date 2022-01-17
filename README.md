@@ -65,6 +65,21 @@ As of v2.0, the storage solution for making this data available alongside the no
 
 Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob Storage Service. To access this data user will need a valid shared access signature (SAS) token.  The data is in [Zarr](https://zarr.readthedocs.io/en/stable/) format and the total volume is ~2TB. The data is in hourly, 3 hourly, 6 hourly, daily and monthly frequencies stored seperatrely under the `metoffice-20cr-ds` container on MS-Azure. Monthly data only is also via [Zenodo](https://zenodo.org/record/2558135).
 
+
+# create s3 bucket
+
+* goto s3 service and press "create bucket"
+* name the bucket 
+* set region to EU (London) eu-west-2
+* add tags:
+  * Name: [name of bucket or any unique name]
+  * ServiceOwner: [your-name]
+  * ServiceCode: PABCLT
+  * Tenable: FA
+* click on "create bucket" 
+
+# Loading data on s3 bucket from VDI (using boto3)
+
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
 Please also consult the `CONTRIBUTING.ipynb` for information on formatting the worksheets in Jupyter Notebooks.  **Note** that we do not currently make use of Jupyter Lab as it doesn't currently support the types of html formatting we use in Jupyter Notebooks.
