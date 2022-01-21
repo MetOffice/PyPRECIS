@@ -78,7 +78,22 @@ Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob S
   * Tenable: FA
 * click on "create bucket" 
 
-# Loading data on s3 bucket from VDI (using boto3)
+## Loading data on s3 bucket from VDI (using boto3)
+
+to rupload the data on S3 use: /aws-scripts/s3_data_upload.py
+
+## Key configurations
+
+The above script run only when config files contains latest keys. In order to update the keys: 
+
+* go to AB climate training dev --> Administrator access --> command line or programmatic access
+* Copy keys in "Option 1: Set AWS environment variables"
+* In VDI, paste (/replace existing) these keys in ~/.aws/config
+* Copy keys in "Option 2: Add a profile to your AWS credentials file"
+* In VDI, Paste the keys in credentials file: ~/.aws/credentials (remove the first copied line, looks somethings like: [198477955030_AdministratorAccess])
+
+
+
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
