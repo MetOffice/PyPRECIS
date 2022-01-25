@@ -55,7 +55,7 @@ Three additional worksheets are available for use by workshop instructors:
 
 * `makedata.ipynb`: Provides scripts for preparing raw model output for use in notebook exercises.
 * `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
-* `worksheet6example.ipynb`: Example code for Worksheet 6. 
+* `worksheet6example.ipynb`: Example code for Worksheet 6.
 
 ## Data
 Data relating to the PyPRECIS project is currently held internally to the Met Office.
@@ -69,28 +69,29 @@ Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob S
 # create s3 bucket
 
 * goto s3 service and press "create bucket"
-* name the bucket 
+* name the bucket
 * set region to EU (London) eu-west-2
 * add tags:
   * Name: [name of bucket or any unique name]
   * ServiceOwner: [your-name]
   * ServiceCode: PABCLT
   * Tenable: FA
-* click on "create bucket" 
-
-## Loading data on s3 bucket from VDI (using boto3)
-
-to rupload the data on S3 use: /aws-scripts/s3_data_upload.py
+* click on "create bucket"
 
 ## Key configurations
 
-The above script run only when config files contains latest keys. In order to update the keys: 
+The above script run only when config files contains latest keys. In order to update the keys:
 
 * go to AB climate training dev --> Administrator access --> command line or programmatic access
 * Copy keys in "Option 1: Set AWS environment variables"
 * In VDI, paste (/replace existing) these keys in ~/.aws/config
 * Copy keys in "Option 2: Add a profile to your AWS credentials file"
 * In VDI, Paste the keys in credentials file: ~/.aws/credentials (remove the first copied line, looks somethings like: [198477955030_AdministratorAccess])
+
+## Loading data on s3 bucket from VDI (using boto3)
+
+to upload the data on S3 use: /aws-scripts/s3_data_upload.py
+
 
 
 
