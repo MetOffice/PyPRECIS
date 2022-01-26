@@ -66,6 +66,44 @@ As of v2.0, the storage solution for making this data available alongside the no
 Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob Storage Service. To access this data user will need a valid shared access signature (SAS) token.  The data is in [Zarr](https://zarr.readthedocs.io/en/stable/) format and the total volume is ~2TB. The data is in hourly, 3 hourly, 6 hourly, daily and monthly frequencies stored seperatrely under the `metoffice-20cr-ds` container on MS-Azure. Monthly data only is also via [Zenodo](https://zenodo.org/record/2558135).
 
 
+## AWS
+
+# Create an EC2 instance
+
+* Select Eu-west2 (London) region from the top right of navigation bar
+* Click on Launch instance
+* Choose Amazon Linux 2 AMI (HVM) kARNEL 5.10 64-bit (- X86) machine, click select
+* Choose t2.2xlarge and click next: configure instance details
+* Choose subnet default eu-west-2c
+* In IAM role choose existing trainings-ec2-dev role and click next: storage
+* 8 gb is fine, click next: add tags
+* Add following tags
+  * Name: [Unique Instance name]
+  * Tenable: FA
+  * ServiceOwner: [firstname.lastname]
+  * ServiceCode: PABCLT
+* add securitygroup, select an existing security group: IAStrainings-ec2-mo
+* Review and Launch and then select launch
+* It will prompt to set a key pair (to allow ssh). create a new key and download it.
+
+It will create the instance. To see the running instance goto instances and instacne state will be "Running"
+
+# SSH instance on VDI
+
+
+* Save the key (.pem)  to .ssh and set the permission: chmod 0400 ~/.ssh/your_key.pem
+* Open ~/.ssh/config and add following:
+
+```
+Host ec2-*.eu-west-2.compute.amazonaws.com
+    IdentityFile ~/.ssh/your_key.pem
+    User ec2-user
+
+```
+
+* Find the public IPv4 DNS and ssh in using it ssh ec2-<ip address>.eu-west-2.compute.amazonaws.com, public IPv4 DNS can be found in instance detail on AWS. Click on your instance and it will open the details.
+
+* Remember to shutdown the instance when not using it. It will save the cost.
 # create s3 bucket
 
 * goto s3 service and press "create bucket"
