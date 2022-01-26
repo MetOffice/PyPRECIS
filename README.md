@@ -104,9 +104,44 @@ Host ec2-*.eu-west-2.compute.amazonaws.com
 * Find the public IPv4 DNS and ssh in using it ssh ec2-<ip address>.eu-west-2.compute.amazonaws.com, public IPv4 DNS can be found in instance detail on AWS. Click on your instance and it will open the details.
 
 * Remember to shutdown the instance when not using it. It will save the cost.
+# create s3 bucket
+
+* goto s3 service and press "create bucket"
+* name the bucket
+* set region to EU (London) eu-west-2
+* add tags:
+  * Name: [name of bucket or any unique name]
+  * ServiceOwner: [your-name]
+  * ServiceCode: PABCLT
+  * Tenable: FA
+* click on "create bucket"
+
+## Key configurations
 
 
+The above script run only when config files contains latest keys. In order to update the keys:
 
+* go to AB climate training dev --> Administrator access --> command line or programmatic access
+* Copy keys in "Option 1: Set AWS environment variables"
+* In VDI, paste (/replace existing) these keys in ~/.aws/config
+* add [default] in first line
+* Copy keys in "Option 2: Add a profile to your AWS credentials file"
+* In VDI, Paste the keys in credentials file: ~/.aws/credentials (remove the first copied line, looks somethings like: [198477955030_AdministratorAccess])
+* add [default] in first line
+
+The config and credentials file should look like (with own keys): 
+
+'''
+[default]
+export AWS_ACCESS_KEY_ID="ASIAS4NRVH7LD2RRGSFB"
+export AWS_SECRET_ACCESS_KEY="rpI/dxzQWhCul8ZHd18n1VW1FWjc0LxoKeGO50oM"
+export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEGkaCWV1LXdlc3QtMiJH"
+'''
+
+## Loading data on s3 bucket from VDI (using boto3)
+
+to upload the file(s) on S3 use: /aws-scripts/s3_file_upload.py
+to upload the directory(s) on S3 use: /aws-scripts/s3_bulk_data_upload.py
 
 
 ## Contributing
