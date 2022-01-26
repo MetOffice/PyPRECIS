@@ -80,20 +80,30 @@ Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob S
 
 ## Key configurations
 
+
 The above script run only when config files contains latest keys. In order to update the keys:
 
 * go to AB climate training dev --> Administrator access --> command line or programmatic access
 * Copy keys in "Option 1: Set AWS environment variables"
 * In VDI, paste (/replace existing) these keys in ~/.aws/config
+* add [default] in first line
 * Copy keys in "Option 2: Add a profile to your AWS credentials file"
 * In VDI, Paste the keys in credentials file: ~/.aws/credentials (remove the first copied line, looks somethings like: [198477955030_AdministratorAccess])
+* add [default] in first line
+
+The config and credentials file should look like (with own keys): 
+
+'''
+[default]
+export AWS_ACCESS_KEY_ID="ASIAS4NRVH7LD2RRGSFB"
+export AWS_SECRET_ACCESS_KEY="rpI/dxzQWhCul8ZHd18n1VW1FWjc0LxoKeGO50oM"
+export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEGkaCWV1LXdlc3QtMiJH"
+'''
 
 ## Loading data on s3 bucket from VDI (using boto3)
 
-to upload the data on S3 use: /aws-scripts/s3_data_upload.py
-
-
-
+to upload the file(s) on S3 use: /aws-scripts/s3_file_upload.py
+to upload the directory(s) on S3 use: /aws-scripts/s3_bulk_data_upload.py
 
 
 ## Contributing
