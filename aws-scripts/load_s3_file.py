@@ -87,7 +87,6 @@ def copy_s3_files(in_fileglob, out_folder):
         new_filename = os.path.split(key)[1]
         temp_filename = os.path.join("/tmp", new_filename)
         in_s3_uri = os.path.join(f"s3://{in_bucket_name}", key)
-        print('Copying: ', key)
         _fetch_s3_file(in_s3_uri, temp_filename)
         if out_scheme == "s3":
             _save_s3_file(
@@ -103,8 +102,8 @@ def copy_s3_files(in_fileglob, out_folder):
 
 
 def main():
-    in_fileglob = 's3://[bucket_name]/path/to/files/files*'
-    out_folder = '/local/path/'
+    in_fileglob = 's3://ias-pyprecis/data/cmip5/*.nc'
+    out_folder = '/home/h01/zmaalick/myprojs/PyPRECIS/aws-scripts'
     copy_s3_files(in_fileglob, out_folder)
 
 
