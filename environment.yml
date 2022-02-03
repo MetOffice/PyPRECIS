@@ -12,3 +12,6 @@ dependencies:
   - dask=2.11.0
   - notebook=5.7.8
   - mo_pack=0.2.0
+  - boto3
+  - botocore
+  - tqdm
