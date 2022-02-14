@@ -20,11 +20,11 @@ conda activate pyprecis-environment
 :exclamation: *Note: As of v1.0 we are unable to provison the model data necessary for reproducing the full PyPRECIS learning environment via github due to it's large file size.  Contact the PRECIS team for more information.*
 
 ## Before you start...
-Read through the current issues to see what you can help with.  If you have your own ideas for improvements, please start a new issues so we can track and discuss your improvement. You must create a new branch for any changes you make.
+Read through the current issues to see what you can help with.  If you have your own ideas for improvements, please start a new issue so we can track and discuss your improvement. You must create a new branch for any changes you make.
 
 **Please take note of the following guidelines when contributing to the PyPRECIS repository.**
 
-* Please do **not** make changes to the `master` branch.  The `master` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can/should push to the `master` branch.
+* Please do **not** make changes to `master` or `develop` branches.  The `master` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can push to the `master` and `develop` branches.
 
 * The `develop` branch contains the latest holistic version of the `PyPRECIS` repository.  Please branch off `develop` to fix a particular issue or add a new feature.
 * Please use the following tokens at the start of a new branch name to help sign-post and group branches:
@@ -66,5 +66,5 @@ have questions.**
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2019, Met Office
+&copy; British Crown Copyright 2018 - 2022, Met Office
 </h5>
