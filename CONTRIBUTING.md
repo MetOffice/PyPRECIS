@@ -24,7 +24,7 @@ Read through the current issues to see what you can help with.  If you have your
 
 **Please take note of the following guidelines when contributing to the PyPRECIS repository.**
 
-* Please do **not** make changes to `master` or `develop` branches.  The `master` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can push to the `master` and `develop` branches.
+* Please do **not** make changes to `main` or `develop` branches.  The `main` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can push to the `main` and `develop` branches.
 
 * The `develop` branch contains the latest holistic version of the `PyPRECIS` repository.  Please branch off `develop` to fix a particular issue or add a new feature.
 * Please use the following tokens at the start of a new branch name to help sign-post and group branches:
