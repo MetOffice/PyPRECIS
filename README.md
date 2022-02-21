@@ -131,12 +131,12 @@ The above script run only when config files contains latest keys. In order to up
 
 The config and credentials file should look like (with own keys):
 
-'''
+```
 [default]
 export AWS_ACCESS_KEY_ID="ASIAS4NRVH7LD2RRGSFB"
 export AWS_SECRET_ACCESS_KEY="rpI/dxzQWhCul8ZHd18n1VW1FWjc0LxoKeGO50oM"
 export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEGkaCWV1LXdlc3QtMiJH"
-'''
+```
 
 ## Loading data on s3 bucket from VDI (using boto3)
 
@@ -149,29 +149,29 @@ Following instructions are for creating image repo on ECR and uploading containe
 
 * SSH EC2 contianer and clone PyPRECIS repository:
 
-'''
+```
 sudo yum install -y git
 git init
+```
 
-'''
 * On VDI repo branch, run the following command:
 
-'''
+```
 git push <ec2 host name>:~
-'''
+```
 
 * Now checkout the branch on EC2: git checkout develop
 * Install docker
 
-'''
+```
 sudo amazon-linux-extras install docker
-'''
+```
 
 * build docker image:
 
-'''
+```
 sudo docker build .
-'''
+```
 
 * goto AWS ECR console and "create repository", make it private and name it
 
