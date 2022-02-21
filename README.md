@@ -181,6 +181,21 @@ sudo docker build .
 
 
 
+# AWS Sagemaker: Run notebook using custom kernel
+
+
+* goto Sagemaker and "open sagemaker domain"
+* add user
+  * Name and and select Amazonsagemaker-executionrole (dafult one)
+
+* Once user is created, goto "attach image"
+* Select "New Image" and add image URI (copy from image repo)
+* Give new image name, display name, sagmaker-executionrole and add tags and attach the image
+* add kernel name and display name (both can be same)
+* Now, launch app -> Studio and it will open the Notebook dashboard.
+* Select python notebook and add your custom named Kernel
+
+
 
 
 
