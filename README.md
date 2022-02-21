@@ -182,7 +182,8 @@ sudo docker build .
 
 
 # AWS Sagemaker: Run notebook using custom kernel
-
+The instructions below follow the following tutorial:
+https://aws.amazon.com/blogs/machine-learning/bringing-your-own-custom-container-image-to-amazon-sagemaker-studio-notebooks/ 
 
 * goto Sagemaker and "open sagemaker domain"
 * add user
