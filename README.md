@@ -129,7 +129,7 @@ The above script run only when config files contains latest keys. In order to up
 * In VDI, Paste the keys in credentials file: ~/.aws/credentials (remove the first copied line, looks somethings like: [198477955030_AdministratorAccess])
 * add [default] in first line
 
-The config and credentials file should look like (with own keys): 
+The config and credentials file should look like (with own keys):
 
 '''
 [default]
@@ -142,6 +142,46 @@ export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEGkaCWV1LXdlc3QtMiJH"
 
 to upload the file(s) on S3 use: /aws-scripts/s3_file_upload.py
 to upload the directory(s) on S3 use: /aws-scripts/s3_bulk_data_upload.py
+
+## AWS Elactic container repository
+
+Following instructions are for creating image repo on ECR and uploading container image
+
+* SSH EC2 contianer and clone PyPRECIS repository:
+
+'''
+sudo yum install -y git
+git init
+
+'''
+* On VDI repo branch, run the following command:
+
+'''
+git push <ec2 host name>:~
+'''
+
+* Now checkout the branch on EC2: git checkout develop
+* Install docker
+
+'''
+sudo amazon-linux-extras install docker
+'''
+
+* build docker image:
+
+'''
+sudo docker build .
+'''
+
+* goto AWS ECR console and "create repository", make it private and name it
+
+* Once created, press "push commands"
+
+* copy the command and run it on EC2 instance, it will push the container image on record
+
+
+
+
 
 
 ## Contributing
