@@ -68,7 +68,7 @@ Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob S
 
 ## AWS
 
-# Create an EC2 instance
+### Create an EC2 instance
 
 * Select Eu-west2 (London) region from the top right of navigation bar
 * Click on Launch instance
@@ -88,7 +88,7 @@ Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob S
 
 It will create the instance. To see the running instance goto instances and instacne state will be "Running"
 
-# SSH instance on VDI
+### SSH instance on VDI
 
 
 * Save the key (.pem)  to .ssh and set the permission: chmod 0400 ~/.ssh/your_key.pem
@@ -104,7 +104,7 @@ Host ec2-*.eu-west-2.compute.amazonaws.com
 * Find the public IPv4 DNS and ssh in using it ssh ec2-<ip address>.eu-west-2.compute.amazonaws.com, public IPv4 DNS can be found in instance detail on AWS. Click on your instance and it will open the details.
 
 * Remember to shutdown the instance when not using it. It will save the cost.
-# create s3 bucket
+### create s3 bucket
 
 * goto s3 service and press "create bucket"
 * name the bucket
@@ -116,7 +116,7 @@ Host ec2-*.eu-west-2.compute.amazonaws.com
   * Tenable: FA
 * click on "create bucket"
 
-## Key configurations
+### Key configurations
 
 
 The above script run only when config files contains latest keys. In order to update the keys:
@@ -138,33 +138,32 @@ export AWS_SECRET_ACCESS_KEY="rpI/dxzQWhCul8ZHd18n1VW1FWjc0LxoKeGO50oM"
 export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEGkaCWV1LXdlc3QtMiJH"
 ```
 
-## Loading data on s3 bucket from VDI (using boto3)
+### Loading data on s3 bucket from VDI (using boto3)
 
 to upload the file(s) on S3 use: /aws-scripts/s3_file_upload.py
 to upload the directory(s) on S3 use: /aws-scripts/s3_bulk_data_upload.py
 
-## AWS Elactic container repository
+### AWS Elastic container repository
 
 Following instructions are for creating image repo on ECR and uploading container image
 
-* SSH EC2 contianer and clone PyPRECIS repository:
+* ssh to the previously created EC2 instance, make an empty Git repo:
 
 ```
 sudo yum install -y git
 git init
 ```
-
-* On VDI repo branch, run the following command:
-
+* On VDI, run the following command to push the PyPrecis repo containing the docker file to the EC2 instance:
 ```
 git push <ec2 host name>:~
 ```
 
-* Now checkout the branch on EC2: git checkout develop
-* Install docker
+* Now checkout the branch on EC2: git checkout [branch-name]
+* Install docker and start docker service
 
 ```
 sudo amazon-linux-extras install docker
+sudo service docker start
 ```
 
 * build docker image:
@@ -177,13 +176,13 @@ sudo docker build .
 
 * Once created, press "push commands"
 
-* copy the command and run it on EC2 instance, it will push the container image on record
+* copy the command and run it on EC2 instance, it will push the container image on record. if get "permission denied" error, please add "sudo" before "docker" in the command.
 
 
 
-# AWS Sagemaker: Run notebook using custom kernel
+### AWS Sagemaker: Run notebook using custom kernel
 The instructions below follow the following tutorial:
-https://aws.amazon.com/blogs/machine-learning/bringing-your-own-custom-container-image-to-amazon-sagemaker-studio-notebooks/ 
+https://aws.amazon.com/blogs/machine-learning/bringing-your-own-custom-container-image-to-amazon-sagemaker-studio-notebooks/
 
 * goto Sagemaker and "open sagemaker domain"
 * add user
