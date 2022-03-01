@@ -10,7 +10,7 @@ def load_data(inpath):
     if inpath.startswith('s3'):
         keys = find_matching_s3_keys(inpath)
         s3dir = get_directory(inpath)
-        temp_path = '/scratch/zmaalick/'
+        temp_path = '/tmp'
         for key in keys:
             file = key.split('/')[-1]
             if os.path.exists(os.path.join(temp_path,file)) == 0:
