@@ -108,15 +108,11 @@ def load_data(inpath):
 
     if inpath.startswith('s3'):
         keys = find_matching_s3_keys(inpath)
-        print(keys)
         s3dir = _get_directory(inpath)
-        print(s3dir)
-        temp_path = '/tmp'
+        temp_path = '/scratch/zmaalick'
         
         for key in keys:
-            
             file = key.split('/')[-1]
-            print(os.path.join(temp_path, file))
             if os.path.exists(os.path.join(temp_path, file)) == 0:
                 print(os.path.join(s3dir, file))
                 copy_s3_files(os.path.join(s3dir, file), temp_path)
@@ -137,7 +133,13 @@ def _get_directory(inpath):
         dirpath = os.path.join(dirpath,p)
     return dirpath
         
-        
+def flush_data():
+    import glob
+    files = glob.glob('/tmp/*.nc')
+    for file in files:
+        os.remove(file)
+
+  
         
 def main():
     in_fileglob = 's3://ias-pyprecis/data/cmip5/.nc'
