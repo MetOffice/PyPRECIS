@@ -134,7 +134,7 @@ def _get_directory(inpath):
 
 def flush_data():
     import glob
-    files = glob.glob('/tmp/*.nc')
+    files = glob.glob('data/*.nc')
     for file in files:
         os.remove(file)
 
