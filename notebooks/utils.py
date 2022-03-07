@@ -103,7 +103,13 @@ def copy_s3_files(in_fileglob, out_folder):
 
 
 def load_data(inpath):
+    '''
+    This methods copy the data from s3 bucket and load the data as iris cubelist. 
+    Data is stored in data/ directory.
 
+    input: file(s) path on s3 bucket
+    output: iris cubelist
+    '''
     if inpath.startswith('s3'):
         keys = find_matching_s3_keys(inpath)
         s3dir = _get_directory(inpath)
@@ -132,9 +138,14 @@ def _get_directory(inpath):
     return dirpath
 
 
-def flush_data():
+def flush_data(path):
+    '''
+    It delete the data from compute node. 
+
+    Input: file(s) path
+    '''
     import glob
-    files = glob.glob('data/*.nc')
+    files = glob.glob(path)
     for file in files:
         os.remove(file)
 
