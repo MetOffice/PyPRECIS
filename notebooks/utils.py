@@ -81,6 +81,8 @@ def copy_s3_files(in_fileglob, out_folder):
     in_fileglob: s3 uri of flies (wild card can be used)
     out_folder: local path where data will be stored
     '''
+    if os.direxists(out_folder) == 0:
+        os.mkdir(out_folder)
     matching_keys = find_matching_s3_keys(in_fileglob)
     in_bucket_name = _split_s3_uri(in_fileglob)[0]
     out_scheme = urlparse(out_folder).scheme
