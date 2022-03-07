@@ -120,7 +120,6 @@ def load_data(inpath):
         for key in keys:
             file = key.split('/')[-1]
             if os.path.exists(os.path.join(temp_path, file)) == 0:
-                print(os.path.join(s3dir, file))
                 copy_s3_files(os.path.join(s3dir, file), temp_path)
             else:
                 print(key, ' already exist')
