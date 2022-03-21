@@ -31,7 +31,7 @@ PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data proces
 Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/precis).
 
 ## Contents
-The teaching elements of PyPRECIS are contained in the `notebooks` directory. The primary worksheets are:
+The teaching elements of PyPRECIS are contained in the `notebooks` directory. The core primary worksheets are:
 
 Worksheet | Aims
 :----: | -----------
@@ -42,7 +42,7 @@ Worksheet | Aims
 [5](notebooks/worksheet5.ipynb) | <li>Have an appreciation for working with daily model data</li><li>Understand how to calculate some useful climate extremes statistics</li><li>Be aware of some coding stratagies for dealing with large data sets</li></ul>  
 [6](notebooks/worksheet6.ipynb) | An extended coding exercise designed to allow you to put everything you've learned into practise  
 
-Additional tutorials specific to the CSSP 20th Century reanalysis datasets:
+Additional tutorials specific to the CSSP 20th Century reanalysis dataset:
 
 Worksheet | Aims
 :----: | -----------
@@ -55,10 +55,17 @@ Three additional worksheets are available for use by workshop instructors:
 
 * `makedata.ipynb`: Provides scripts for preparing raw model output for use in notebook exercises.
 * `worksheet_solutions.ipyn`: Solutions to worksheet exercices.
-* `worksheet6example.ipynb`: Example code for Worksheet 6. 
+* `worksheet6example.ipynb`: Example code for Worksheet 6.
 
 ## Data
-The data used in the worksheets is currently only available within the Met Office. Data relating to the CSSP_20CRDS_Tutorials is also available in Zarr format in an Azure Blob Storage Service. See the `data/DATA-ACESS.md` for further details.
+Data relating to the PyPRECIS project is currently held internally to the Met Office.
+
+The total data volume for the core worksheets is 36.68 GB, of which ~20 GB is raw pp data. This is too large to be stored on github, or via git lfs.
+As of v2.0, the storage solution for making this data available alongside the notebooks is still under investgation.
+
+Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob Storage Service. To access this data user will need a valid shared access signature (SAS) token.  The data is in [Zarr](https://zarr.readthedocs.io/en/stable/) format and the total volume is ~2TB. The data is in hourly, 3 hourly, 6 hourly, daily and monthly frequencies stored seperatrely under the `metoffice-20cr-ds` container on MS-Azure. Monthly data only is also via [Zenodo](https://zenodo.org/record/2558135).
+
+
 
 ## Contributing
 Information on how to contribute can be found in the [Contributing guide](CONTRIBUTING.md).
@@ -69,5 +76,5 @@ PyPRECIS is licenced under BSD 3-clause licence for use outside of the Met Offic
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2020, Met Office
+&copy; British Crown Copyright 2018 - 2022, Met Office
 </h5>
