@@ -19,7 +19,7 @@ def upload_folder_to_s3(s3_client, s3bucket, input_dir, s3_path):
 
 def main():
     s3_client = boto3.client('s3')
-    upload_folder_to_s3(s3_client, 'ias-pyprecis', 'data', 'data')
+    upload_folder_to_s3(s3_client, 'ias-pyprecis', '/data/users/fris/s3_uploads/pp', 'data/pp')
 
 
 if __name__ == "__main__":
