@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/
 /data/stash_select
+notebooks/data_v2/
 *.pyc
