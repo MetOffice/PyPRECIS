@@ -24,18 +24,20 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 
 
 ## Overview
-PyPRECIS forms part of the Met Office PRECIS regional climate modelling system.  It is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment.
+PyPRECIS is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment. 
 
 PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
 
-Further information about PRECIS can be found on the [Met Office website](https://www.metoffice.gov.uk/precis).
+The data analysed in the notebooks is from the CORDEX-Core simulations which provide an ensemble of high-resolution (at least 25 km) regional climate change information. Further information about CORDEX-Core can be found on the [CORDEX website](https://cordex.org/experiment-guidelines/cordex-core/cordex-core-simulations/).
 
 ## Contents
 The teaching elements of PyPRECIS are contained in the `notebooks` directory. The core primary worksheets are:
 
 Worksheet | Aims
 :----: | -----------
-[1](notebooks/worksheet1.ipynb) | <li>Identify and list the names of PRECIS output data in PP format using standard Linux commands</li><li>Use basic Iris commands to load data files, and view Iris cubes</li><li>Use Iris commands to remove the model rim, select data variables and save the output as NetCDF files</li>
+[1](notebooks/worksheet1.ipynb) | <li>Identify and list the names of CORDEX output data in netCDF format using standard Linux commands.
+<li>Use basic Iris commands to load data files, and view Iris cubes.</li></li>
+<li>Use Iris commands to merge netCDF files - Take a subset of the data based on a date range - Save the output as NetCDF files. </li>
 [2](notebooks/worksheet2.ipynb) | <li>Apply basic statistical operations to Iris cubes</li><li>Plot information from Iris cubes</li>
 [3](notebooks/worksheet3.ipynb) | <li>Extract specific regions of interested from large datasets</li><li>Apply more advanced statistical operations to multi-annual data</li><li>Produce your own data processing workflow</li>  
 [4](notebooks/worksheet4.ipynb) | <li>Calculate difference and percentage differences across cubes</li><li>Plot cubes using different plotting methods and with an appropriate colour scale</li><li>Create time series anomalies of precipitation and tempeature</li>  
@@ -58,10 +60,7 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6.
 
 ## Data
-Data relating to the PyPRECIS project is currently held internally to the Met Office.
-
-The total data volume for the core worksheets is 36.68 GB, of which ~20 GB is raw pp data. This is too large to be stored on github, or via git lfs.
-As of v2.0, the storage solution for making this data available alongside the notebooks is still under investgation.
+For information on how to access the CORDEX-Core data used in these worksheets, see: [CORDEX: How to access the data](https://cordex.org/data-access/how-to-access-the-data/). Most CORDEX data is available for unrestricted use but some is provided for non coomerical use only. Before you download any CORDEX data you must ensure you are aware of the Terms of Use for the data you are accessing. 
 
 Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob Storage Service. To access this data user will need a valid shared access signature (SAS) token.  The data is in [Zarr](https://zarr.readthedocs.io/en/stable/) format and the total volume is ~2TB. The data is in hourly, 3 hourly, 6 hourly, daily and monthly frequencies stored seperatrely under the `metoffice-20cr-ds` container on MS-Azure. Monthly data only is also via [Zenodo](https://zenodo.org/record/2558135).
 
