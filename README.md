@@ -24,11 +24,11 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 
 
 ## Overview
-PyPRECIS is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment. 
+PyPRECIS is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment. The name PyPRECIS is a refefence to the initial version of these notebooks which were designed for analysis of data from the PRECIS model but the training is now designed to be a more general 
 
 PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
 
-The data analysed in the notebooks is from the CORDEX-Core simulations which provide an ensemble of high-resolution (at least 25 km) regional climate change information. Further information about CORDEX-Core can be found on the [CORDEX website](https://cordex.org/experiment-guidelines/cordex-core/cordex-core-simulations/).
+The data analysed in the first set of notebooks is from the CORDEX-Core simulations which provide an ensemble of high-resolution (at least 25 km) regional climate change information. Further information about CORDEX-Core can be found on the [CORDEX website](https://cordex.org/experiment-guidelines/cordex-core/cordex-core-simulations/). There is also a [Special issue of Climate Dynamics](https://link.springer.com/journal/382/volumes-and-issues/57-5) which gives more information about this data. There are also a set of notebooks which analyse the 20CR-DS data set covering China.
 
 ## Contents
 The teaching elements of PyPRECIS are contained in the `notebooks` directory. The core primary worksheets are:
