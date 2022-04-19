@@ -24,7 +24,7 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 
 
 ## Overview
-PyPRECIS is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment. The name PyPRECIS is a refefence to the initial version of these notebooks which were designed for analysis of data from the PRECIS model but the training is now designed to be a more general 
+PyPRECIS is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment. The name PyPRECIS is a refefence to the initial version of these notebooks which were designed for analysis of data from the PRECIS model but the training is now designed to be more general.
 
 PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
 
