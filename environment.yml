@@ -15,3 +15,6 @@ dependencies:
   - boto3
   - botocore
   - tqdm
+  - cdo
+  - nco
+  - ncview
