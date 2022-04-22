@@ -2,4 +2,5 @@
 notebooks/.ipynb_checkpoints/
 /data/stash_select
 notebooks/data_v2/
+notebooks/AFR-22/data_afr22/
 *.pyc
