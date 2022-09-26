@@ -4,3 +4,4 @@ notebooks/.ipynb_checkpoints/
 notebooks/data_v2/
 notebooks/AFR-22/data_afr22/
 *.pyc
+.idea
