@@ -8,11 +8,12 @@ The developer who reviews each pull request is responsible for checking that the
 
 ## Code Contributors  
 
- *  Hamish Steptoe (Met Office, UK), [hamish.steptoe@metoffice.gov.uk](mailto:hamish.steptoe@metoffice.gov.uk)
- *  Zubair Maalick (Met Office, UK when contributing)
- *  Nicholas Savage (Met Office, UK), [nicholas.savage@metoffice.gov.uk](mailto:nicholas.savage@metoffice.gov.uk)
- *  Grace Redmond (Met Office, UK), [grace.redmond@metoffice.gov.uk](mailto:grace.redmond@metoffice.gov.uk)
- *  Rosanna Amato (Met Office, UK), [rosanna.amato@metoffice.gov.uk](mailto:rosanna.amato@metoffice.gov.uk)
+ *  Hamish Steptoe (Met Office, UK), @hsteptoe
+ *  Zubair Maalick (Met Office, UK when contributing) @zmaalick
+ *  Nicholas Savage (Met Office, UK), @nhsavage
+ *  Saeed Sadri (Met Office, UK when contributing) @balazagi
+ *  Grace Redmond (Met Office, UK), @gredmond-mo
+ *  Rosanna Amato (Met Office, UK), @rosannaamato
  
 
 ## Contributor Licence Agreement and Certificate of Origin  
