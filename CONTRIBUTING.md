@@ -2,9 +2,9 @@
 
 You'd like to help? Great!  :tada:
 
-All contributions to `PyPRECIS` are made via merges with the develop branch.
+All contributions to `PyPRECIS` are made via merges with the main branch.
 New contributors should add their details to the "code contributors" section of this document as part of their first request.
-The developer who reviews each pull request is responsible for checking that the contributor's name is listed in this file before merging the changes into master branch.
+The developer who reviews each pull request is responsible for checking that the contributor's name is listed in this file before merging the changes into main branch.
 
 ## Code Contributors  
 
@@ -63,9 +63,9 @@ Read through the current issues to see what you can help with.  If you have your
 
 **Please take note of the following guidelines when contributing to the PyPRECIS repository.**
 
-* Please do **not** make changes to `main` or `develop` branches.  The `main` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can push to the `main` and `develop` branches.
+* Please do **not** make changes directly to the `main` branch.  The `main` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can push to the the `main` branch.
 
-* The `develop` branch contains the latest holistic version of the `PyPRECIS` repository.  Please branch off `develop` to fix a particular issue or add a new feature.
+* The `main` branch contains the latest holistic version of the `PyPRECIS` repository.  Please branch off `main` to fix a particular issue or add a new feature.
 * Please use the following tokens at the start of a new branch name to help sign-post and group branches:
 
 Name | Description
@@ -83,7 +83,7 @@ junk | Throwaway branch created to experiment
 new/Wks10
 fix/Wks2_units
 ```
-* When you think your branch is ready to be merged into `develop`, open a new pull request.
+* When you think your branch is ready to be merged into `main`, open a new pull request.
 
 ## Signposting
 * **Issues** are tracked and discussed under the Issues tab.  Please use issues to disucss proposed changes or capture improvements needed to work towards the next milestone.  Issues or improvements that contribute to the next milestone to be captured in thr Wiki tab.
@@ -105,5 +105,5 @@ have questions.**
 
 <h5 align="center">
 <img src="notebooks/img/MO_MASTER_black_mono_for_light_backg_RBG.png" width="200" alt="Met Office"> <br>
-&copy; British Crown Copyright 2018 - 2022, Met Office
+&copy; British Crown Copyright 2018 - 2023, Met Office
 </h5>
