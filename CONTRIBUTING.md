@@ -14,7 +14,8 @@ The developer who reviews each pull request is responsible for checking that the
  *  Saeed Sadri (Met Office, UK when contributing) @balazagi
  *  Grace Redmond (Met Office, UK), @gredmond-mo
  *  Rosanna Amato (Met Office, UK), @rosannaamato
- 
+ *  Joshua Wiggs (Met Office, UK), @JoshuaWiggs
+
 
 ## Contributor Licence Agreement and Certificate of Origin  
 By making a contribution to this project, I certify that:  
@@ -29,8 +30,8 @@ created in whole or in part by me, under the terms and conditions as described b
 consistent with this project or the licence(s) involved.  
 * I, or my employer, grant to the UK Met Office and all recipients of this software a perpetual, worldwide, non-exclusive,
 no-charge, royalty-free, irrevocable copyright licence to reproduce, modify, prepare derivative works of, publicly display,
-publicly perform, sub-licence, and distribute this contribution and such modifications and derivative works consistent with 
-this project or the licence(s) involved or other appropriate open source licence(s) specified by the project and approved by 
+publicly perform, sub-licence, and distribute this contribution and such modifications and derivative works consistent with
+this project or the licence(s) involved or other appropriate open source licence(s) specified by the project and approved by
 the [Open Source Initiative (OSI)](https://opensource.org/)  
 * If I become aware of anything that would make any of the above inaccurate, in any way, I will let the UK Met Office know as
 soon as I become aware.  
