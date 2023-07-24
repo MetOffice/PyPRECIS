@@ -26,7 +26,7 @@ PyPRECIS is the python based training environment for Met Office PRECIS training
 ## Overview
 PyPRECIS is principally designed as a learning tool to faciliate processing of regional climate model (RCM) output.  It is desgined to be used in conjunction with taught workshops in an instructor led environment. The name PyPRECIS is a refefence to the initial version of these notebooks which were designed for analysis of data from the PRECIS model but the training is now designed to be more general.
 
-PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/).
+PyPRECIS is built on [Jupyter Notebooks](https://jupyter.org/), with data processing performed in python, making use of [Iris](https://scitools.org.uk/iris/docs/latest/). A conda environment is provided to install these packages, along with their dependencies. A guide containing instructions on how to install the conda environment can be found [here](install-conda-env.md). 
 
 The data analysed in the first set of notebooks is from the CORDEX-Core simulations which provide an ensemble of high-resolution (at least 25 km) regional climate change information. Further information about CORDEX-Core can be found on the [CORDEX website](https://cordex.org/experiment-guidelines/cordex-core/cordex-core-simulations/). There is also a [Special issue of Climate Dynamics](https://link.springer.com/journal/382/volumes-and-issues/57-5) which gives more information about this data. There are also a set of notebooks which analyse the 20CR-DS data set covering China.
 
@@ -58,7 +58,7 @@ Three additional worksheets are available for use by workshop instructors:
 * `worksheet6example.ipynb`: Example code for Worksheet 6.
 
 ## Data
-For information on how to access the CORDEX-Core data used in these worksheets, see: [CORDEX: How to access the data](https://cordex.org/data-access/how-to-access-the-data/). Most CORDEX data is available for unrestricted use but some is provided for non commercial use only. Before you download any CORDEX data you must ensure you are aware of the Terms of Use for the data you are accessing. 
+For information on how to access the CORDEX-Core data used in these worksheets, see: [CORDEX: How to access the data](https://cordex.org/data-access/how-to-access-the-data/). Most CORDEX data is available for unrestricted use but some is provided for non commercial use only. Before you download any CORDEX data you must ensure you are aware of the Terms of Use for the data you are accessing.
 
 Data relating to the **CSSP 20CRDS** tutorials is held online in an Azure Blob Storage Service. To access this data user will need a valid shared access signature (SAS) token.  The data is in [Zarr](https://zarr.readthedocs.io/en/stable/) format and the total volume is ~2TB. The data is in hourly, 3 hourly, 6 hourly, daily and monthly frequencies stored seperatrely under the `metoffice-20cr-ds` container on MS-Azure. Monthly data only is also via [Zenodo](https://zenodo.org/record/2558135).
 
