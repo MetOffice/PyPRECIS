@@ -20,3 +20,4 @@ dependencies:
   - cdo
   - nco
   - ncview
+  - pre-commit

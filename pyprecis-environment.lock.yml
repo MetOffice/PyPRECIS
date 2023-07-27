@@ -51,6 +51,7 @@ dependencies:
   - certifi=2023.7.22
   - cf-units=3.2.0
   - cffi=1.15.1
+  - cfgv=3.3.1
   - cftime=1.6.2
   - charset-normalizer=3.2.0
   - click=8.1.6
@@ -68,6 +69,7 @@ dependencies:
   - debugpy=1.6.7
   - decorator=5.1.1
   - defusedxml=0.7.1
+  - distlib=0.3.7
   - distributed=2023.7.1
   - eccodes=2.31.0
   - entrypoints=0.4
@@ -76,6 +78,7 @@ dependencies:
   - executing=1.2.0
   - expat=2.5.0
   - fftw=3.3.10
+  - filelock=3.12.2
   - findlibs=0.0.5
   - flit-core=3.9.0
   - font-ttf-dejavu-sans-mono=2.37
@@ -104,6 +107,7 @@ dependencies:
   - hdf4=4.2.15
   - hdf5=1.14.1
   - icu=72.1
+  - identify=2.5.5
   - idna=3.4
   - importlib-metadata=6.8.0
   - importlib_metadata=6.8.0
@@ -224,6 +228,7 @@ dependencies:
   - nest-asyncio=1.5.6
   - netcdf-fortran=4.6.1
   - netcdf4=1.6.4
+  - nodeenv=1.7.0
   - notebook=7.0.0
   - notebook-shim=0.2.3
   - nspr=4.35
@@ -249,6 +254,7 @@ dependencies:
   - platformdirs=3.9.1
   - ply=3.11
   - pooch=1.7.0
+  - pre-commit=3.2.1
   - proj=9.2.1
   - prometheus_client=0.17.1
   - prompt-toolkit=3.0.39
@@ -319,7 +325,9 @@ dependencies:
   - tzdata=2023c
   - ucx=1.14.1
   - udunits2=2.2.28
+  - ukkonen=1.0.1
   - urllib3=1.26.15
+  - virtualenv=20.24.2
   - wcwidth=0.2.6
   - webencodings=0.5.1
   - websocket-client=1.6.1
@@ -359,3 +367,4 @@ dependencies:
   - zipp=3.16.2
   - zlib=1.2.13
   - zstd=1.5.2
+ 
