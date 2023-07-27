@@ -359,4 +359,3 @@ dependencies:
   - zipp=3.16.2
   - zlib=1.2.13
   - zstd=1.5.2
-prefix: /home/h06/jwiggs/.conda/envs/pyprecis
