@@ -79,7 +79,7 @@ junk | Throwaway branch created to experiment
 
 * Git can pattern match branches to to give you an overview of all (e.g. fix) branches:
  ```shell
- git branch --list "_fix_"
+ git branch --list "*_fix_*"
  ```
 
 * For example:
