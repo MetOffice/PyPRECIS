@@ -66,7 +66,10 @@ Read through the current issues to see what you can help with.  If you have your
 * Please do **not** make changes directly to the `main` branch.  The `main` branch is reserved for files and code that has been fully tested and reviewed.  Only the core PyPRECIS developers can push to the the `main` branch.
 
 * The `main` branch contains the latest holistic version of the `PyPRECIS` repository.  Please branch off `main` to fix a particular issue or add a new feature.
-* Please use the following tokens at the start of a new branch name to help sign-post and group branches:
+
+* please use the pattern `i<###>_<token>_<branchname>` for naming your branches where `<###>` is the issue number you are working on and token is as below
+
+* use these tokens as part of a new branch name to help sign-post and group branches:
 
 Name | Description
 ---- | -----------
@@ -76,12 +79,13 @@ junk | Throwaway branch created to experiment
 
 * Git can pattern match branches to to give you an overview of all (e.g. fix) branches:
  ```shell
- git branch --list "fix/*"
+ git branch --list "_fix_"
  ```
-* Use a forward slash to separate the token from the branch name. For example:
+
+* For example:
 ```
-new/Wks10
-fix/Wks2_units
+i42_new_Wks10
+i422_fix_Wks2_units
 ```
 * When you think your branch is ready to be merged into `main`, open a new pull request.
 
