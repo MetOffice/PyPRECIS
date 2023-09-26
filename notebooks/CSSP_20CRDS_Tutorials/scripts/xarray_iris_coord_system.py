@@ -1,8 +1,8 @@
-'''
+"""
 (C) Crown Copyright, Met Office. All rights reserved.
 This file is part of PyPrecis and is released under the BSD 3-Clause license.
 See LICENSE in the root of the repository for full licensing details.
-'''
+"""
 import json
 
 import iris
@@ -11,9 +11,11 @@ import xarray as xr
 
 
 class XarrayIrisCoordSystem(object):
-    coord_systems_lookup = {'latitude_longitude': iris.coord_systems.GeogCS,
-                            'rotated_latitude_longitude': iris.coord_systems.RotatedGeogCS,
-                            'mercator': iris.coord_systems.Mercator}
+    coord_systems_lookup = {
+        "latitude_longitude": iris.coord_systems.GeogCS,
+        "rotated_latitude_longitude": iris.coord_systems.RotatedGeogCS,
+        "mercator": iris.coord_systems.Mercator,
+    }
 
     def __init__(self):
         self._cube = None
@@ -62,7 +64,9 @@ class XarrayIrisCoordSystem(object):
         if constructor is not None:
             result = constructor(**coord_system_dict, ellipsoid=ellipsoid)
         else:
-            raise ValueError(f"Coord system name {coord_system_name!r} is either not known or supported.")
+            raise ValueError(
+                f"Coord system name {coord_system_name!r} is either not known or supported."
+            )
         return result
 
     def from_iris(self, cube):
@@ -81,7 +85,7 @@ class XarrayIrisCoordSystem(object):
         self.cube = self.data_array.to_iris()
         if coord_system_str is not None:
             cube_coord_system = self._build_coord_system(coord_system_str)
-            for axis in ['X', 'Y']:
+            for axis in ["X", "Y"]:
                 try:
                     self.cube.coord(axis=axis).coord_system = cube_coord_system
                 except AttributeError:

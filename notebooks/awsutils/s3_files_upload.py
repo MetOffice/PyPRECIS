@@ -1,8 +1,8 @@
-'''
+"""
 (C) Crown Copyright, Met Office. All rights reserved.
 This file is part of PyPrecis and is released under the BSD 3-Clause license.
 See LICENSE in the root of the repository for full licensing details.
-'''
+"""
 # this script load data on aws s3 bucket
 import botocore
 import boto3
@@ -25,7 +25,7 @@ def upload_file(file_name, bucket, object_name=None):
         object_name = os.path.basename(file_name)
 
     # Upload the file
-    s3_client = boto3.client('s3')
+    s3_client = boto3.client("s3")
     try:
         s3_client.upload_file(file_name, bucket, object_name)
     except botocore.exceptions.ClientError as e:
