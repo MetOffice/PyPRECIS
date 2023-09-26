@@ -1,8 +1,8 @@
-'''
+"""
 (C) Crown Copyright, Met Office. All rights reserved.
 This file is part of PyPrecis and is released under the BSD 3-Clause license.
 See LICENSE in the root of the repository for full licensing details.
-'''
+"""
 import io
 import os
 import boto3
@@ -12,7 +12,6 @@ from shutil import copyfile
 
 
 def _fetch_s3_file(s3_uri, save_to):
-
     bucket_name, key = _split_s3_uri(s3_uri)
     print(f"Fetching s3 object {key} from bucket {bucket_name}")
 
@@ -31,11 +30,7 @@ def _save_s3_file(s3_uri, out_filename, file_to_save="/tmp/tmp"):
     out_filepath = os.path.join(folder, out_filename)
     print(f"Save s3 object {out_filepath} to bucket {bucket}")
     client = boto3.client("s3")
-    client.upload_file(
-        Filename=file_to_save,
-        Bucket=bucket,
-        Key=out_filepath
-    )
+    client.upload_file(Filename=file_to_save, Bucket=bucket, Key=out_filepath)
 
 
 def _split_s3_uri(s3_uri):
@@ -44,7 +39,6 @@ def _split_s3_uri(s3_uri):
 
 
 def find_matching_s3_keys(in_fileglob):
-
     bucket_name, file_and_folder_name = _split_s3_uri(in_fileglob)
     folder_name = os.path.split(file_and_folder_name)[0]
     all_key_responses = _get_all_files_in_s3_folder(bucket_name, folder_name)
@@ -77,13 +71,13 @@ def _get_all_files_in_s3_folder(bucket_name, folder_name):
 
 
 def copy_s3_files(in_fileglob, out_folder):
-    '''
+    """
     This function copy files from s3 bucket to local directory.
     args
     ---
     in_fileglob: s3 uri of flies (wild card can be used)
     out_folder: local path where data will be stored
-    '''
+    """
     matching_keys = find_matching_s3_keys(in_fileglob)
     in_bucket_name = _split_s3_uri(in_fileglob)[0]
     out_scheme = urlparse(out_folder).scheme
@@ -99,15 +93,13 @@ def copy_s3_files(in_fileglob, out_folder):
                 temp_filename,
             )
         else:
-            copyfile(
-                temp_filename, os.path.join(out_folder, new_filename)
-            )
+            copyfile(temp_filename, os.path.join(out_folder, new_filename))
         os.remove(temp_filename)
 
 
 def main():
-    in_fileglob = 's3://ias-pyprecis/data/cmip5/*.nc'
-    out_folder = '/home/h01/zmaalick/myprojs/PyPRECIS/aws-scripts'
+    in_fileglob = "s3://ias-pyprecis/data/cmip5/*.nc"
+    out_folder = "/home/h01/zmaalick/myprojs/PyPRECIS/aws-scripts"
     copy_s3_files(in_fileglob, out_folder)
 
 
