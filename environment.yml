@@ -1,21 +1,16 @@
-name: pyprecis-environment
+name: pyprecis
 channels:
-     - conda-forge
-     - conda-main
+  - conda-forge
 dependencies:
   - python
-  - iris=3.6.1
+  - iris=3.6
   - iris-sample-data
   - numpy
   - matplotlib
   - nc-time-axis
-  - jupyter_client
-  - jupyter_core
+  - jupyter
   - dask
-  - notebook
-  - mo_pack
   - boto3
-  - botocore
   - tqdm
   - cdo
   - nco
